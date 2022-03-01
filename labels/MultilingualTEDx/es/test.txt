@@ -1,0 +1,302 @@
+051ObIQbmVs_0004	42.97	47.40	pero yo estoy pensando en otro alguien que no tiene nombre ni apellido
+051ObIQbmVs_0005	48.74	57.09	estoy pensando en ese alguien que perdió su nombre y su apellido que desapareció su nombre y su apellido su identidad
+051ObIQbmVs_0006	58.80	61.87	ahora en argentina está desapareciendo gente
+051ObIQbmVs_0007	62.48	66.86	en el mundo ahora en este momento miles de personas desaparecen
+051ObIQbmVs_0010	101.97	107.82	es necesario devolverles su identidad reescribir su nombre y su apellido
+051ObIQbmVs_0015	141.69	143.39	pero somos casi iguales
+051ObIQbmVs_0020	171.62	174.93	se pueden escribir algunos libros con tres millones de letras
+051ObIQbmVs_0026	208.29	213.85	y saber que hay una proporción de esas letras que tienen en común de acuerdo a ese parentesco
+051ObIQbmVs_0029	240.29	241.66	tiene que ver y mucho
+051ObIQbmVs_0031	243.38	249.73	porque nuestro organismo nuestro sistema inmune es profundamente xenófobo
+051ObIQbmVs_0035	268.68	277.60	pero también esos genes nos permitían justamente porque lo hacíamos entre familiares emparentados analizar y establecer vínculos de parentesco
+051ObIQbmVs_0039	301.27	307.01	podíamos extraer moléculas de una célula viva o muerta y compararlas
+051ObIQbmVs_0040	307.92	316.97	entonces dimos un paso hacia adelante y podíamos entonces identificar una célula muerta dentro de un cuerpo o un resto óseo
+051ObIQbmVs_0043	333.20	353.77	llegó a córdoba un grupo de mujeres y hombres antropólogos y antropólogas del equipo argentino de antropología forense que venían caminando por argentina exhumando fosas buscando causas de muerte analizando esos huesos tratando de identificarlos y restituirlos a las familias
+051ObIQbmVs_0045	360.75	368.30	y llegaron a córdoba a exhumar una fosa masiva del cementerio municipal de san vicente
+051ObIQbmVs_0046	370.49	374.77	un amigo en común nos reunió en su casa
+051ObIQbmVs_0050	408.02	427.07	me contaron historias de todos los países pero ahí en esa reunión en ese asado con ese vino nos dimos cuenta que estaban en un escollo había un punto muerto necesitaban incorporar una tecnología nueva a este proceso complejo de la identificación y era la genética
+051ObIQbmVs_0057	464.15	471.26	montamos un laboratorio de genética donde hay chicos jóvenes que están trabajando yo lo sé muchísimo
+051ObIQbmVs_0058	472.29	479.20	y empezamos a caminar convocamos familiares empezamos a cruzar letras para reescribir nombres
+051ObIQbmVs_0060	499.92	511.40	salimos también a caminar el camino que venían caminando ellos uruguay paraguay bolivia donde también hubieron dictaduras y desaparecieron nombres e identidades
+051ObIQbmVs_0063	538.41	539.33	y en asia
+051ObIQbmVs_0065	543.62	544.59	todo nos fue bien
+051ObIQbmVs_0067	546.64	549.62	muchísimas veces nos quedamos en la mitad
+051ObIQbmVs_0070	563.42	571.98	y otras veces aun teniendo los restos están tan deteriorados que no podemos descifrar las letras para compararlas con los familiares
+051ObIQbmVs_0071	574.17	577.47	eso genera una gran frustración realmente
+051ObIQbmVs_0074	603.18	605.82	eso no es verdad eso es ficción
+051ObIQbmVs_0075	608.32	609.45	la realidad es otra
+051ObIQbmVs_0076	609.93	619.82	nosotros le llamamos a eso efecto csi porque generan una imagen distorsionada del complejo proceso de identificación
+051ObIQbmVs_0077	620.47	628.96	lo más preocupante es que no lo hacen solamente sobre la gente popularmente sino que algunas autoridades de los gobiernos también creen que es tan fácil
+051ObIQbmVs_0081	665.72	677.15	era una convocatoria a una cantidad de familias que venían a donar sus muestras de sangre para hacer un banco de sangre y comparar los datos con la cantidad de fosas que se iban descubriendo
+051ObIQbmVs_0083	681.49	684.88	los familiares estaban serios venían a donar sus muestras de sangre
+051ObIQbmVs_0086	693.85	695.86	yo le iba a extender la mano para dársela
+051ObIQbmVs_0087	696.31	703.42	la miré era pequeñita bien nativa vestida con su traje típico
+051ObIQbmVs_0090	722.03	729.76	por ese pedidomandato es que vale la pena insistir e insistir en esos casos complejos que no podemos resolver
+9VA26uZPqYA_0000	10.59	16.32	cuando tenía cinco años y empezaba a leer mi querido abuelo carlos felipe me regaló un libro de aventuras
+9VA26uZPqYA_0001	17.04	19.41	los cazadores de microbios de paul de kruif
+9VA26uZPqYA_0002	19.97	35.10	en sus capítulos estaban leeuwenhoek spallanzani koch el del bacilo pasteur hombres que con microscopios rudimentarios buscaban derrotar al enemigo invisible
+9VA26uZPqYA_0003	36.85	44.97	el libro no despertó en mí la vocación por la medicina o la química pero sí mi pasión por la historia
+9VA26uZPqYA_0004	47.27	51.98	y como viajero frecuente al pasado quería contarles algo de las pandemias que azotaron a la humanidad
+9VA26uZPqYA_0005	52.73	60.89	podríamos hablar del feroz cólera de la segunda mitad del siglo xix o de la viruela que tanto costó dominar
+9VA26uZPqYA_0006	61.48	66.09	pero hay dos pandemias que quedaron muy marcadas por sus consecuencias fatales
+9VA26uZPqYA_0007	66.69	73.19	en el siglo xiv la peste negra provocada por un piojo que se movía en las ratas
+9VA26uZPqYA_0008	75.81	81.70	empezó en asia y de allí pasó a venecia el puerto más cosmopolita de su tiempo
+9VA26uZPqYA_0009	83.22	84.34	así se metió en europa
+9VA26uZPqYA_0011	90.50	93.42	de cada cuatro europeos a uno se lo llevó la peste
+9VA26uZPqYA_0012	93.73	95.88	los números en asia fueron bastante similares
+9VA26uZPqYA_0014	107.08	120.49	gripe española que comenzó en eeuu con soldados norteamericanos preparándose para ir al final de la primera guerra mundial y que contagiaron a las poblaciones de los puertos de francia donde se embarcaban
+9VA26uZPqYA_0015	120.51	122.55	de allí se esparció por todo el continente
+9VA26uZPqYA_0016	124.81	128.49	empezó en eeuu y llegó a europa por francia
+9VA26uZPqYA_0018	131.76	133.33	bueno eso fue un fake news
+9VA26uZPqYA_0019	135.88	143.23	el gobierno y la prensa de españa decidieron enfrentar el mal poniendo en la superficie las estadísticas
+9VA26uZPqYA_0020	144.66	153.01	por ese sinceramiento de los datos y de los números terminaron siendo señalados como responsables de algo que no les correspondía
+9VA26uZPqYA_0021	153.77	158.48	en aquella oportunidad uno de cada cinco infectados murió
+9VA26uZPqYA_0027	202.91	205.84	que cuando nos atacaron no estábamos advertidos
+9VA26uZPqYA_0028	205.86	207.25	no estábamos preparados
+9VA26uZPqYA_0029	210.19	215.79	para colmo en muchos de los casos no se sabía de dónde venía el contagio
+9VA26uZPqYA_0030	215.81	220.43	por lo tanto las respuestas y las reacciones no eran efectivas para contrarrestar el mal
+9VA26uZPqYA_0032	226.70	233.51	algo muy importante que la peligrosidad del virus se potencia con la desinformación
+9VA26uZPqYA_0034	236.67	251.32	en el siglo xiv en vez de ocuparse de las ratas y de la falta de higiene se sostenía que el estilo de vida pecaminoso de muchos había desatado la ira divina
+9VA26uZPqYA_0035	253.13	269.36	en el siglo xx en vez de mostrar las verdaderas causales de aquella gripe se distorsionó la realidad y el bicho estuvo fuera de control
+9VA26uZPqYA_0036	270.71	273.67	de esa manera se desparramó por los cinco continentes
+9VA26uZPqYA_0037	275.72	285.68	por lo tanto podemos haber aprendido de una vez que debemos manejarnos con la verdad
+9VA26uZPqYA_0039	288.44	303.20	otra de las grandes enseñanzas en aquella oportunidad fue que vamos a tener que mantenernos en guardia aún después de que pase la tormenta
+9VA26uZPqYA_0040	303.22	308.59	porque siempre ha habido segundas y terceras oleadas que se han llevado a los desprevenidos
+9VA26uZPqYA_0041	309.77	313.98	pero sobre todo podemos aventurar tiempos maravillosos de crecimiento
+9VA26uZPqYA_0042	315.94	319.19	porque luego de la peste negra surgió el renacimiento
+9VA26uZPqYA_0044	331.29	336.12	sí al final del túnel nos espera el sol
+9hUjhIfs-bw_0010	77.24	79.98	un niño de mi edad puede hacerlo
+9hUjhIfs-bw_0015	147.77	156.41	y resulta que todo eso que yo estaba aprendiendo es lo que los mayores llaman informática creativa
+9hUjhIfs-bw_0041	425.56	428.05	pues lo he hecho yo y eso me mola más
+9hUjhIfs-bw_0043	448.27	452.30	pero no es la primera vez que hago algo para los peques de mi colegio
+9hUjhIfs-bw_0047	468.91	471.49	y tenían razón y os lo voy a demostrar hoy
+9hUjhIfs-bw_0054	542.99	546.41	incluso les enseñamos que ellos también tenían música en su interior
+9hUjhIfs-bw_0056	547.98	549.67	los pequeños se portaron genial
+9hUjhIfs-bw_0060	568.82	570.54	pues os lo voy a demostrar a continuación
+9hUjhIfs-bw_0083	823.29	832.52	y a vosotros los padres os pido por favor que montéis talleres de programación en los colegios para que ningún niño se quede sin aprender todo esto
+9hUjhIfs-bw_0086	853.95	855.51	muchas gracias por vuestra atención
+C82IwCttOlM_0000	10.93	14.13	sin identidad no podemos ser en sociedad
+C82IwCttOlM_0002	21.22	27.23	son etiquetadas renombradas por un diagnóstico que no habla de la persona
+C82IwCttOlM_0003	28.53	40.53	despojar de identidad es el comienzo de una serie de humillaciones de acuerdo a la cultura al contexto a las circunstancias que se repite a lo largo de la historia de la humanidad
+C82IwCttOlM_0005	51.01	53.81	pero nombrar es un acto de resistencia
+C82IwCttOlM_0007	57.43	61.55	y nuestros niños y nuestros jóvenes pueden ser reconocidos
+C82IwCttOlM_0009	66.45	69.12	la escuela tiene el poder de nombrar
+C82IwCttOlM_0010	69.50	72.03	la escuela devuelve identidad
+C82IwCttOlM_0011	72.71	75.53	tiene el poder de devolver la condición de persona
+C82IwCttOlM_0012	75.99	78.77	tan simple como eso la escuela dignifica
+C82IwCttOlM_0013	79.51	84.76	entonces si soñamos con una sociedad inclusiva la clave está en la escuela
+HLIJkmy3vy8_0006	54.72	56.57	y mi hija abrió los ojos grandes y yo también
+HLIJkmy3vy8_0017	137.80	138.77	no había ni un bar
+HLIJkmy3vy8_0018	139.28	147.75	pepe pensó que si abría un bar podría hacer felices a otros dándoles de tomar y además también pensó que podía ganar alguna moneda
+HLIJkmy3vy8_0029	218.54	219.66	todo el mundo lo miró
+HLIJkmy3vy8_0053	335.13	339.77	no pasó por la plaza del pueblo en las siguientes cuatro semanas
+HLIJkmy3vy8_0054	340.27	348.33	es decir le dije a nina pepe no se enteró del desastre que se iba a armar por culpa de sus papelitos
+HLIJkmy3vy8_0058	368.62	372.17	le conté lo que pasó en el pueblo durante la primera semana
+HLIJkmy3vy8_0059	373.81	379.00	ese lunes la plaza estaba llena de gente mucho más que en un lunes normal
+HLIJkmy3vy8_0060	379.43	390.31	muchos vecinos habían pasado la noche entera recortando sus propios papelitos porque también habían descubierto tenían proyectos que no podían cumplir por falta de monedas
+HLIJkmy3vy8_0061	391.54	395.90	unos papelitos decían en breve heladería de horacio
+HLIJkmy3vy8_0062	396.93	400.31	otros papelitos decían muy pronto peluquería de carmen
+HLIJkmy3vy8_0065	416.48	420.46	se trepaban a la fuente para intercambiar papelitos por monedas
+HLIJkmy3vy8_0066	420.64	425.98	el martes fue todavía peor y el miércoles ya no se podía caminar por la plaza del quilombo que había
+HLIJkmy3vy8_0068	436.99	442.29	este pequeño local se inauguró el jueves y fue bautizado con el nombre de el salón de los papelitos
+HLIJkmy3vy8_0076	487.92	490.39	ahora necesito monedas para comprar cigarros y no tengo
+HLIJkmy3vy8_0082	522.30	528.96	trato hecho dijo ernesto que era rico pero quería ser todavía más rico y le sacó de las manos por ocho monedas el papelito
+HLIJkmy3vy8_0084	545.77	548.13	algunos se subieron a las sillas otros a las mesas
+HLIJkmy3vy8_0091	592.22	594.52	y así pasó la primera semana
+HLIJkmy3vy8_0092	595.21	602.72	entonces la miré a nina que me dijo ahora me parece que empieza a parecerse a lo que dijo el pelado de la tele
+HLIJkmy3vy8_0097	628.65	629.51	y nina me miró así
+HLIJkmy3vy8_0101	642.42	648.48	en el comedor había una barra de madera el baño se había convertido en dos baños uno para damas otro para caballeros
+HLIJkmy3vy8_0104	667.72	673.86	incluso el alcalde después de hablarlo con su secretario decidió sumarse a la nueva moda
+HLIJkmy3vy8_0113	712.48	716.51	los papelitos oficiales están a la venta desde ahora corran que se acaban
+HLIJkmy3vy8_0114	717.76	720.67	los papelitos del alcalde se vendieron en tiempo récord
+HLIJkmy3vy8_0115	720.98	728.38	todos en el pueblo entregaron sus caballos al alcalde y desde ese día las tareas se empezaron a hacer a pie
+HLIJkmy3vy8_0116	729.10	737.57	mientras tanto el intercambio de papelitos siguió en aumento y ya no alcanzaban los lápices para anotar quién era dueño de qué
+HLIJkmy3vy8_0117	738.09	755.12	algunos papelitos eran muy deseados por ejemplo los de pepe que trabajaba día y noche en la concreción de su bar pero a otros papelitos no los quería nadie por ejemplo los de moncho porque su artefacto para hacer viajes a la luna por el momento solamente constaba de dos caballos y un carro
+HLIJkmy3vy8_0132	852.62	865.92	le expliqué que los fajos de ernesto reciben el nombre de obligaciones de deuda mientras que la casa de quique el lugar a donde van los vecinos para saber si confían o no en los fajos de ernesto se llama banca de inversión
+HLIJkmy3vy8_0135	882.37	888.34	horacio había conseguido batir leche y frutas para su heladería y nomás le quedaba traer barras de hielo desde la ciudad
+HLIJkmy3vy8_0136	889.34	896.11	en cambio carmen todavía no había encontrado un buen local para instalar su peluquería aunque ya tenía docenas de tijeras afiladas
+HLIJkmy3vy8_0141	915.25	918.75	hasta que apareció quique con una gran idea
+HLIJkmy3vy8_0144	920.82	923.85	los que todavía tengan papelitos de moncho no se preocupen
+HLIJkmy3vy8_0145	923.87	927.49	yo les puedo vender tranquilidad de quique para esos papelitos
+HLIJkmy3vy8_0162	997.39	999.50	todos los demás se los había llevado el alcalde
+HLIJkmy3vy8_0169	1037.07	1041.78	y el secretario dijo son las posibilidades de concreción de cada proyecto
+HLIJkmy3vy8_0170	1041.91	1047.82	es para ayudar yo lo hago por uds y así pasó la tercera semana
+HLIJkmy3vy8_0172	1070.70	1079.15	entonces nina me preguntó si finalmente pepe había logrado abrir su bar porque ya estábamos en la cuarta semana y le conté el final de la historia
+HLIJkmy3vy8_0176	1098.32	1103.43	ahora solamente faltaba que llegaran los vecinos a caballo con las gargantas muertas de sed
+HLIJkmy3vy8_0177	1103.98	1112.49	pepe recorrió las cinco leguas hasta el pueblo poniendo carteles en todos los árboles del camino bar la luna abierto todas las noches
+HLIJkmy3vy8_0180	1126.44	1129.50	pensó que se había equivocado de camino y estaba en un pueblo diferente
+HLIJkmy3vy8_0181	1129.52	1132.62	parecía que por ese pueblo hubiera pasado la guerra
+HLIJkmy3vy8_0182	1133.26	1141.66	las farolas y la fuente de la plaza estaban destrozadas no había un solo caballo en las calles y los vecinos caminaban en redondo hablando solos
+HLIJkmy3vy8_0198	1176.21	1178.33	no lo mío fue un fracaso dijo horacio
+HLIJkmy3vy8_0199	1178.56	1181.85	no hay caballos para ir a buscar hielo a la ciudad y el helado se derrite
+HLIJkmy3vy8_0200	1182.03	1183.25	y carmen no tiene clientes
+HLIJkmy3vy8_0201	1183.46	1185.46	está todo el mundo arrancándose los pelos solo
+HLIJkmy3vy8_0203	1187.27	1191.68	pepe se quedó en silencio no podía creer lo que le estaban contando
+HLIJkmy3vy8_0205	1193.75	1194.95	necesito algo fuerte
+HLIJkmy3vy8_0206	1196.18	1198.66	y luis dijo yo también tengo la garganta seca
+HLIJkmy3vy8_0208	1203.11	1205.72	y otros también se acercaron a preguntar por el bar
+HLIJkmy3vy8_0223	1260.90	1269.44	no dijo moncho yo solamente sé una cosa yo lo que sé es que la gente puede ir a un bar a caballo pero nadie puede volver borracho y montando un caballo
+HLIJkmy3vy8_0224	1269.70	1273.98	y como yo no tomo pensé que mi negocio podría ser llevarlos y traerlos de la luna
+HLIJkmy3vy8_0227	1285.97	1290.13	nina incluso aplaudió contenta el final de la historia
+HLIJkmy3vy8_0229	1311.19	1319.84	porque en el medio aparecen quiques aparecen alcaldes aparecen ernestos y secretarios y lo echan siempre todo a perder
+U0bRlf7xmYs_0000	8.80	15.35	probablemente recuerdan esta imagen de la cancillera angela merkel haciéndose un selfie con un refugiado
+U0bRlf7xmYs_0007	74.17	81.03	esta es una gráfica que muestra el número de refugiados que entraron en alemania durante el año pasado
+U0bRlf7xmYs_0012	108.32	110.28	estamos perdiendo la identidad
+U0bRlf7xmYs_0039	433.21	443.81	los objetivos de este proyecto eran desarrollar bueno primero crear estos espacios de interacción para poder con ello desarrollar las competencias comunicativas
+U0bRlf7xmYs_0046	499.03	506.46	estos tableros que utilizamos para el proyecto se componen de pictogramas y del vocabulario núcleo
+U0bRlf7xmYs_0047	506.48	518.24	el vocabulario núcleo son las palabras que se repiten más en la lengua espontánea y esto sucede no solamente en alemán sino también en español en catalán en vasco en inglés etc
+U0bRlf7xmYs_0062	635.29	641.15	además de las competencias comunicativas también quisimos desarrollar las competencias creativas
+U0bRlf7xmYs_0063	641.74	648.80	la creatividad es la expresión afectiva y cognitiva de cada individuo
+U0bRlf7xmYs_0076	730.95	739.59	esta es la recreación por ordenador de nuestra visión queríamos que nuestras chicas estuvieran en un tranvía el tranvía del deseo
+U0bRlf7xmYs_0081	798.73	812.96	de hecho la prensa nos destacó como proyecto ejemplar para contrarrestar las tendencias xenófobas que tristemente cada vez son más no solamente en alemania sino en toda europa
+U0bRlf7xmYs_0082	813.29	820.95	así mismo fueron muchas las personas que nos preguntaron si podían replicar el proyecto si ellos podían hacer su especial hallofoto
+a0G1K1A269Y_0008	90.62	92.34	visité la casa de ana frank
+a0G1K1A269Y_0009	94.18	99.90	mientras caminaba por los pasillos y los pisos miraba las imágenes y las historias
+a0G1K1A269Y_0010	101.73	107.82	en un momento determinado simplemente me quedé allí y lloré
+a0G1K1A269Y_0011	109.78	112.01	me conmovía lo que veía y leía
+a0G1K1A269Y_0012	113.30	119.44	nadie pensó que esto fuese extraño ni me habló cuando me vió llorar
+a0G1K1A269Y_0013	121.07	127.70	en este espacio me sentí como si pudiera hacerlo y me quedé allí todo el tiempo que pude
+a0G1K1A269Y_0014	129.98	141.89	nadie sabía que mi razón para entrar en este sitio fuese encontrar un lugar donde llorar donde nadie me preguntara el porqué
+a0G1K1A269Y_0016	155.72	165.85	este sentimiento de miedo vergüenza me llevaba a permanecer en silencio encontrar consuelo en un lugar donde llorar parecía estar bien
+a0G1K1A269Y_0019	184.86	191.73	me sentía culpable y avergonzada me sentía vacía y sola
+a0G1K1A269Y_0020	193.97	205.87	y aunque me veía a mí misma como alguien que tenía todo bajo control en lo más profundo de mi interior me estaba desmoronando
+a0G1K1A269Y_0027	226.30	228.85	esto me ayudó a decidir buscar ayuda
+a0G1K1A269Y_0029	240.93	247.73	cuando tuve ataques de pánico tenía amigos que estaban a solamente un mensaje o llamada de distancia
+a0G1K1A269Y_0030	248.76	253.01	no tenían que decir nada solamente escuchaban
+a0G1K1A269Y_0038	320.97	328.07	sí es importante arriesgarnos hablar en alto para quien ha vivido o está viviendo el trauma
+a0G1K1A269Y_0040	343.86	355.48	te reto a romper la barrera entre los que están luchando y los que no lo están porque nadie tiene que sentirse avergonzado de no estar bien
+dyLvm7yXjPo_0011	65.32	67.07	y está dentro de tu cuerpo
+dyLvm7yXjPo_0017	87.13	91.39	quiero decirles que no hay nada como una sonrisa
+dyLvm7yXjPo_0020	99.07	101.09	ya podés danzar
+dyLvm7yXjPo_0022	102.23	103.33	con lo que tenés
+dyLvm7yXjPo_0036	163.69	167.86	estrellas que iluminan iluminan esta tarde
+dyLvm7yXjPo_0038	170.75	172.83	no parece noche
+dyLvm7yXjPo_0041	180.93	186.34	tener estrellas en las manos que nos miran y nos hablan
+dyLvm7yXjPo_0044	191.19	192.85	porque está dentro tuyo
+dyLvm7yXjPo_0046	200.01	205.13	en cada movimiento que hacemos está el ritmo que has creado
+dyLvm7yXjPo_0051	221.86	224.68	el círculo no tiene puertas
+dyLvm7yXjPo_0054	230.53	232.06	me han traído
+dyLvm7yXjPo_0057	241.87	243.09	no tengan miedo
+dyLvm7yXjPo_0058	244.12	247.29	si no puedo hacer esto puedo hacer otro
+dyLvm7yXjPo_0059	247.91	251.69	si no puedo hacer otro puedo hacer el otro
+dyLvm7yXjPo_0060	252.19	254.07	yo soy el otro
+dyLvm7yXjPo_0071	298.31	302.51	no sé lo que es el sonido de la palabra
+dyLvm7yXjPo_0074	317.24	318.95	siempre he querido danzar
+dyLvm7yXjPo_0075	319.77	323.40	porque siempre veo el movimiento
+iFGXV3NQQmA_0000	11.68	14.45	ella acaba de recibir una carta documento
+iFGXV3NQQmA_0004	39.83	41.23	hoy no tendría dónde ir a dormir
+iFGXV3NQQmA_0008	58.27	62.55	pero no hay traductor del lenguaje abogadil a un lenguaje que entendamos todos
+iFGXV3NQQmA_0009	63.10	68.20	google dice que es demasiado caro para los pocos que somos la comunidad de los que hacemos derecho
+iFGXV3NQQmA_0010	69.50	72.77	la carta no se entiende pero manda dos mensajes
+iFGXV3NQQmA_0011	73.34	76.31	el primero es puse un abogado
+iFGXV3NQQmA_0012	77.27	80.76	el conflicto escaló y ahora no lo podemos resolver charlando
+iFGXV3NQQmA_0013	82.13	83.70	el segundo es más oscuro
+iFGXV3NQQmA_0014	84.31	86.07	el segundo le dice ud
+iFGXV3NQQmA_0015	86.18	87.87	está fuera del lenguaje de la ley
+iFGXV3NQQmA_0016	89.06	94.95	el lenguaje le pertenece a los abogados y a las abogadas a los jueces y a las juezas pero no a ud
+iFGXV3NQQmA_0019	119.01	122.56	después de todo la ley en democracia es nuestra
+iPk9VTATmGM_0006	65.02	71.54	la otra mitad no habla porque temen que no les crean
+iPk9VTATmGM_0007	73.01	76.18	y tienen razón porque no les creemos
+iPk9VTATmGM_0009	84.19	96.66	no les creemos porque cuando una mujer cuenta lo que le pasó dice cosas que no imaginamos que nos perturban que no esperamos escuchar que nos asombran
+iPk9VTATmGM_0012	107.84	110.87	ocurrió en la medianoche cuando volvía a su casa
+iPk9VTATmGM_0014	119.91	122.29	la violó y luego huyó
+iPk9VTATmGM_0018	164.06	168.40	el siguiente es el testimonio de una mujer a la que vamos a llamar ana
+iPk9VTATmGM_0021	189.74	193.36	conocimos a unos pibes y yo me enganché con un flaco re piola
+iPk9VTATmGM_0024	202.08	207.54	entonces el flaco me preguntó dónde vivía y me dijo que si me parecía bien él me acercaba
+iPk9VTATmGM_0025	207.87	209.52	acepté y nos fuimos
+iPk9VTATmGM_0026	210.81	214.47	en un semáforo me dijo que yo le gustaba y me tocó la pierna
+iPk9VTATmGM_0027	215.91	220.63	a mí no me gusta que un tipo avance así pero había sido amoroso toda la noche
+iPk9VTATmGM_0028	221.75	228.22	pensé no puedo ser tan paranoica por ahí le digo algo y el tipo nada que ver y lo ofendo
+iPk9VTATmGM_0029	229.79	232.21	cuando tenía que doblar siguió de largo
+iPk9VTATmGM_0031	237.55	238.82	pero algo feo sentí
+iPk9VTATmGM_0033	246.75	251.18	cuando paró el auto cerca de la autopista ahí sí tuve miedo
+iPk9VTATmGM_0035	261.53	266.22	yo no le decía nada porque me daba miedo que se enojara y todo fuera peor
+iPk9VTATmGM_0036	267.45	269.65	pensé que podía tener un arma en la guantera
+iPk9VTATmGM_0037	271.30	274.47	de repente se me tiró encima y me quiso besar
+iPk9VTATmGM_0039	276.70	279.02	quería empujarlo pero me tenía los brazos
+iPk9VTATmGM_0040	280.19	283.48	cuando me solté traté de abrir la puerta pero estaba trabada
+iPk9VTATmGM_0042	290.71	298.42	le dije que él no era la clase de tipo que necesita hacer eso para estar con una mina que él también me gustaba pero no de esa manera
+iPk9VTATmGM_0043	298.66	303.57	trataba de calmarlo le decía cosas lindas de él
+iPk9VTATmGM_0044	303.80	306.33	le hablaba como si yo fuera su hermana mayor
+iPk9VTATmGM_0047	321.88	325.86	nunca me sentí tan sola como secuestrada
+iPk9VTATmGM_0048	326.96	329.94	le pedí que acabara rápido y me llevara a mi casa
+iPk9VTATmGM_0055	384.91	391.71	y vamos a escuchar cosas que no vamos a poder entender ni aceptar
+iPk9VTATmGM_0057	406.43	410.90	entonces para defendernos de esa incomodidad tenemos un recurso
+iPk9VTATmGM_0058	412.93	426.05	le subimos el volumen a todas esas cosas de la historia que esperábamos escuchar el revólver en la guantera las puertas trabadas el aislamiento del lugar
+iPk9VTATmGM_0061	454.73	461.43	para creerle para poder confiar en que realmente ella fue una víctima
+iPk9VTATmGM_0062	464.38	467.68	yo llamo a esto victimización de las víctimas
+iPk9VTATmGM_0063	468.42	481.58	victimización porque para poder creer que es inocente y que es una víctima necesitamos pensarlas inermes paralizadas mudas
+iPk9VTATmGM_0066	517.39	524.06	sirve para que podamos agarrarnos de las dudas y sentirnos más cómodos con las dudas
+iPk9VTATmGM_0071	559.75	568.56	la sentencia se vería corroborada por el hecho de que ella después no cuenta que haya peleado para evitar la violación
+iPk9VTATmGM_0074	584.46	587.68	llamo a esto culpabilización de las víctimas
+iPk9VTATmGM_0076	606.50	624.61	tanto es así que cuando ana llegó a mí me dijo que no sabía si el testimonio de ella me iba a servir porque no estaba segura de que lo que le había pasado hubiera sido una violación
+iPk9VTATmGM_0079	667.14	669.56	ana no había hablado de esto nunca con nadie
+iPk9VTATmGM_0081	677.30	678.88	no lo hizo porque tuvo miedo
+iPk9VTATmGM_0083	699.98	704.78	y si eso hubiera pasado hubiera sido tal vez peor que la violación misma
+iPk9VTATmGM_0086	752.20	755.48	primero y principal ana dijo no
+iPk9VTATmGM_0087	758.02	767.70	cuando vio que su no era inútil le habló bien trató de no exacerbar su violencia de no darle ideas
+iPk9VTATmGM_0091	808.03	829.20	en la mayoría de los países los códigos siguen pidiendo que la víctima para probar su inocencia digo bien la víctima para probar su inocencia presente marcas en el cuerpo que atestigüen que ella sostuvo una lucha tenaz y constante con su agresor
+iPk9VTATmGM_0095	860.24	881.51	más bien las escuché como asombradas y hasta un poco orgullosas de reconocer lo lúcidas que habían estado en ese momento lo atentas a cada detalle como si eso les permitiera tener algún control sobre lo que estaba pasando
+iPk9VTATmGM_0097	896.60	898.70	negocian sexo por vida
+iPk9VTATmGM_0098	903.59	912.06	le piden al agresor que termine rápido para que todo termine lo antes posible y con el menor costo
+iPk9VTATmGM_0099	913.60	929.04	se someten a la penetración porque aunque no puedan creerlo la penetración es lo que más lejos las mantiene de una escena sexual o afectiva
+iPk9VTATmGM_0102	987.56	1000.49	las mujeres van a seguir sin poder hablar y vamos a seguir siendo todos responsables de ese silencio y de su soledad
+jej8qlzlAGw_0001	34.25	38.30	y como piensas que tu trabajo es interesante le dices soy matemático
+jej8qlzlAGw_0011	108.99	114.30	ante esto cuando a un matemático le preguntan para qué sirven las matemáticas los matemáticos nos dividimos en grupos
+jej8qlzlAGw_0026	186.12	189.59	estas son las respuestas que te va a dar tu profe de matemática si le preguntas
+jej8qlzlAGw_0027	190.02	192.81	es de los de la defensiva
+jej8qlzlAGw_0032	205.78	208.99	así que vale preguntadme para qué sirven las matemáticas
+jej8qlzlAGw_0036	240.34	251.89	pero también es verdad que allá donde los científicos donde los técnicos andan buscando teorías matemáticas modelos que les permitan avanzar ahí están en el edificio de las matemáticas que lo permean todo
+jej8qlzlAGw_0037	252.92	257.65	es verdad que tenemos que ir algo más al fondo vamos a ver qué hay detrás de la ciencia
+jej8qlzlAGw_0041	287.49	289.46	echa las cuentas y verás que sí
+jej8qlzlAGw_0043	292.38	299.47	es verdad que la ciencia toda la ciencia solamente tiene sentido porque nos hace comprender mejor el mundo este hermoso en el que estamos
+jej8qlzlAGw_0044	299.82	304.50	y porque nos hace nos ayuda a sortear las trampas del mundo este doloroso en el que estamos
+jej8qlzlAGw_0045	304.83	307.22	hay ciencias que tocan esa aplicación con la mano
+jej8qlzlAGw_0047	310.04	314.94	y hay otras que la miramos desde lejos con envidia a veces pero sabiendo que somos su soporte
+jej8qlzlAGw_0048	316.08	319.78	todas las ciencias básicas son el soporte de aquellas y entre ellas las matemáticas
+jej8qlzlAGw_0060	379.28	381.63	hace falta una demostración
+jej8qlzlAGw_0062	388.98	392.23	lo quiero cubrir con piezas iguales sin dejar huecos
+jej8qlzlAGw_0073	441.36	447.63	y eso se convirtió en un teorema el teorema del panal que va a ser verdad para siempre siempre jamás más que cualquier diamante que tengas
+jej8qlzlAGw_0076	459.09	461.11	esferas no que dejan huequitos
+jej8qlzlAGw_0082	494.44	496.30	nene trae el octaedro truncado que vienen visitas
+jej8qlzlAGw_0085	501.28	503.22	se quedó en una conjetura la conjetura de kelvin
+jej8qlzlAGw_0092	563.28	567.14	cómo le pasa a la estructura de weaire y phelan es la mejor hasta que salga otra mejor
+jej8qlzlAGw_0094	583.64	587.49	y entonces será un teorema una verdad para siempre siempre jamás
+jej8qlzlAGw_0095	587.93	589.19	más que cualquier diamante
+wCPPrDCCn_k_0001	17.22	21.94	unos somos más extrovertidos otros más introvertidos y otros ni una cosa ni la otra
+wCPPrDCCn_k_0002	22.13	24.63	yo tengo que decirlo soy muy introvertido
+wCPPrDCCn_k_0003	24.92	26.60	no soy bueno en las relaciones sociales
+wCPPrDCCn_k_0004	26.84	30.68	imaginaos lo difícil que es para mí ponerme en este punto rojo delante de tanta gente
+wCPPrDCCn_k_0008	46.66	48.43	no hay nada en este mundo que me guste más
+wCPPrDCCn_k_0013	63.24	66.51	si os digo la verdad hasta hace poco no me había hecho esa pregunta
+wCPPrDCCn_k_0014	67.96	72.16	ya he dicho que no soy bueno interactuando con la gente pero soy muy bueno observando
+wCPPrDCCn_k_0015	72.16	73.15	me encanta observar
+wCPPrDCCn_k_0020	90.60	97.49	el cine te da una visión amplia total del mundo de todas sus gentes de todas sus ideas de todas sus formas de ver la realidad
+wCPPrDCCn_k_0021	97.80	100.62	y yo creo que por eso me gusta tanto el cine
+wCPPrDCCn_k_0023	109.84	114.44	yo creo que esa es la gran ventaja de estar detrás de no interactuar
+wCPPrDCCn_k_0025	118.29	122.28	lo admito no es que sea el cine más típico de la gente de mi edad
+wCPPrDCCn_k_0026	122.44	135.41	es un cine de autor cine independiente de bajo presupuesto de denuncia social lejos de los arquetipos del cine de los eeuu cine de países tan raros cinematográficamente como turquía palestina o filipinas
+wCPPrDCCn_k_0030	151.09	157.37	como dice uno de mis directores favoritos lars von trier las películas son como las piedras en los zapatos tienen que doler
+wCPPrDCCn_k_0031	157.86	163.50	no es que tengamos que sufrir con todas y cada una de las películas pero tenemos que sentir emociones verdaderas
+wCPPrDCCn_k_0032	163.91	172.39	sin embargo cuando veo películas de los eeuu llenas de efectos especiales de personajes vacíos de historias que no aportan nada solo es una historia nada más
+wCPPrDCCn_k_0033	172.39	174.48	no te llega no sientes no sufres no lloras
+wCPPrDCCn_k_0034	175.06	177.11	eso para mí no sirve de nada
+wCPPrDCCn_k_0035	178.53	183.03	yo siendo un introvertido llevaba mi afición al cine como algo mío algo personal
+wCPPrDCCn_k_0036	183.37	189.46	todos sabían que era muy cinéfilo pero no tenía a prácticamente nadie con quien comentar las películas que veía
+wCPPrDCCn_k_0043	217.42	221.00	esa semana estuve viendo películas películas y películas
+wCPPrDCCn_k_0044	221.30	226.21	me metí un poco en el mundo periodístico pero lo que saqué de ahí fue muchísimo más que eso
+wCPPrDCCn_k_0054	275.72	287.63	en este tiempo casi un año mi habilidad para escribir para expresarme y mi enorme afición por el cine han ido aumentando y aumentando a pasos agigantados
+wCPPrDCCn_k_0055	288.73	290.84	eso fue el año pasado
+wCPPrDCCn_k_0068	363.56	367.04	pero realmente en esta vida si quieres hacer algo hazlo
+wCPPrDCCn_k_0069	367.31	368.37	si te pagan estupendo
+wCPPrDCCn_k_0070	368.37	373.15	si no serás feliz con tu trabajo que creo que es lo más importante
+wCPPrDCCn_k_0073	393.68	398.45	gracias a que escribo sobre cine consigo abrirme consigo ser realmente yo
+wCPPrDCCn_k_0074	398.47	402.70	cuando escribo rompo la barrera que tengo de la expresión oral que tanto me cuesta
+wCPPrDCCn_k_0075	403.61	407.26	consigo ser realmente yo plasmar mis ideas tal cual las siento
+wCPPrDCCn_k_0076	407.90	428.00	pero lejos de todo esto que me sirve muchísimo y de lo que estoy orgulloso creo que lo que más me gusta con lo que más disfruto con mi trabajo es cuando escribo algo una noticia crítica o reportaje lo cuelgo y recibo mensajes de compañeros amigos familiares profesores que dicen felicidades
+wCPPrDCCn_k_0082	469.95	472.94	la forma que he encontrado de abrirme no la cambiaría por nada
+wCPPrDCCn_k_0083	473.18	475.14	yo soy yo cuando escribo soy yo
+wCPPrDCCn_k_0084	475.52	481.94	y os voy a decir algo no os fieis de lo que veis de mí todos los días de lo que veis en fotos y videos
+wCPPrDCCn_k_0088	490.55	494.32	pero lejos de todo esto ese felicidades
+wCPPrDCCn_k_0090	495.20	498.68	me encanta lo que haces es lo mejor que pueden decirme
+wCPPrDCCn_k_0091	500.03	503.70	es lo más bonito que me pueden decir en la vida siendo un introvertido

@@ -1,0 +1,16 @@
+it-it
+
+set: train
+ talks: 483
+ sentences: 26387
+ time: 165086.6s == 45h51m26s
+
+set: valid
+ talks: 8
+ sentences: 252
+ time: 1242.39s == 0h20m42s
+
+set: test
+ talks: 8
+ sentences: 309
+ time: 1610.48s == 0h26m50s
