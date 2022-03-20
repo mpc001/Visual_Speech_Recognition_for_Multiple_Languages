@@ -9,6 +9,7 @@ from configparser import ConfigParser
 
 from lipreading.model import Lipreading
 from dataloader.dataloader import AVSRDataLoader
+from dataloader.utils import get_video_properties
 
 
 class LipreadingPipeline(object):
@@ -27,33 +28,39 @@ class LipreadingPipeline(object):
         :param face_track: str, face tracker will be used if set it as True.
         :param device: str, contain the device on which a torch.Tensor is or will be allocated.
         """
-        assert os.path.isfile(config_filename), \
-            f"config_filename: {config_filename} does not exist."
-        config = ConfigParser()
-        config.read(config_filename)
-        self.input_v_fps = config.getfloat("input", "v_fps")
-        self.model_v_fps = config.getfloat("model", "v_fps")
-        self.modality = config.get("input", "modality")
+        if feats_position == "mouth":
+            self.modality = "video"
+            self.dataloader = AVSRDataLoader(
+                modality=self.modality,
+                disable_transform=True,
+            )
+            self.model = None
+        else:
+            assert os.path.isfile(config_filename), \
+                f"config_filename: {config_filename} does not exist."
+            config = ConfigParser()
+            config.read(config_filename)
+            self.input_v_fps = config.getfloat("input", "v_fps")
+            self.model_v_fps = config.getfloat("model", "v_fps")
+            self.modality = config.get("input", "modality")
 
-        self.dataloader = AVSRDataLoader(
-            modality=self.modality,
-            disable_transform=feats_position=="mouth",
-            speed_rate=self.input_v_fps/self.model_v_fps,
-            convert_gray=True,
-        )
-        self.model = Lipreading(
-            config,
-            feats_position=feats_position,
-            device=device,
-        )
+            self.dataloader = AVSRDataLoader(
+                modality=self.modality,
+                speed_rate=self.input_v_fps/self.model_v_fps,
+            )
+            self.model = Lipreading(
+                config,
+                feats_position=feats_position,
+                device=device,
+            )
 
-        self.feats_position = feats_position
-
-        if face_track:
+        if face_track and self.modality == "video":
             from tracker.face_tracker import FaceTracker
             self.face_tracker = FaceTracker(device="cuda:0")
         else:
             self.face_tracker = None
+
+        self.feats_position = feats_position
 
 
     def __call__(
@@ -91,7 +98,8 @@ class LipreadingPipeline(object):
         if self.feats_position:
             if self.feats_position == "mouth":
                 assert self.modality == "video", "input modality should be `video`."
-                output = (sequence, self.input_v_fps)
+                vid_fps = get_video_properties(data_filename)["fps"]
+                output = (sequence, vid_fps)
             else:
                 output = self.model.extract_feats(sequence)
         else:

@@ -60,3 +60,19 @@ def save2npz(filename, data=None):
     if not os.path.exists(os.path.dirname(filename)):
         os.makedirs(os.path.dirname(filename))
     np.savez_compressed(filename, data=data)
+
+
+
+def get_video_properties(filename):
+    """get_video_properties.
+
+    :param filename: str, the fileanme for a video sequence.
+    """
+    vid_properties = {}
+    vid = cv2.VideoCapture(filename)
+    vid_properties["width"] = vid.get(cv2.CAP_PROP_FRAME_WIDTH )
+    vid_properties["height"] = vid.get(cv2.CAP_PROP_FRAME_HEIGHT )
+    vid_properties["fps"] =  vid.get(cv2.CAP_PROP_FPS)
+    vid_properties["frames"] = vid.get(cv2.CAP_PROP_FRAME_COUNT)
+    vid.release()
+    return vid_properties

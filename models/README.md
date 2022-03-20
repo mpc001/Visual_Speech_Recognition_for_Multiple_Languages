@@ -13,9 +13,9 @@ It supports a number of datasets for speech recognition:
 
 
 ### Video-to-Text List
-- For the CMU-MOSEAS dataset, video-to-text list can be found in *`${lipreading_root}/${dataset}/${language_code}`* folder.
+- For the CMU-MOSEAS dataset, video-to-text list can be found in *`${lipreading_root}/labels/${dataset}/${language_code}`* folder.
 
-- For datasets with single language, video-to-text list can be found in *`${lipreading_root}/${dataset}`* folder.
+- For datasets with single language, video-to-text list can be found in *`${lipreading_root}/labels/${dataset}`* folder.
 
 
 ### Details
@@ -63,7 +63,7 @@ It supports a number of datasets for speech recognition:
 
 <p> </p>
 
-|     Components        |  WER |                                             url                                         |  size (MB)  |
+|     Components        |  CER |                                             url                                         |  size (MB)  |
 |:----------------------|:----:|:---------------------------------------------------------------------------------------:|:-----------:|
 |   **Visual-only**     |
 | -                     |  8.0 |[GoogleDrive](https://bit.ly/3fR8RkU) or [BaiduDrive](https://bit.ly/3IyACLB)(key: 7eq1) |     195     |
