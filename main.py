@@ -119,7 +119,7 @@ def benchmark_inference(lipreader, data_dir, landmarks_dir, lines, dst_dir=""):
             if groundtruth is not None:
                 print(f"ref: {groundtruth}")
                 wer.update( get_wer(output, groundtruth), len(groundtruth.split()))
-                cer.update( get_cer(output, groundtruth), len(groundtruth))
+                cer.update( get_cer(output, groundtruth), len(groundtruth.replace(" ", "")))
                 print(
                     f"progress: {idx+1}/{len(lines)}\tcur WER: {wer.val*100:.1f}\t"
                     f"cur CER: {cer.val*100:.1f}\t"
