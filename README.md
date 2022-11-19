@@ -198,7 +198,11 @@ If you find this code useful in your research, please consider citing the follow
   title={{Visual Speech Recognition for Multiple Languages in the Wild}},
   author={Ma, Pingchuan and Petridis, Stavros and Pantic, Maja},
   journal={{Nature Machine Intelligence}},
+  volume={4},
+  pages={930--939},
   year={2022}
+  url={https://doi.org/10.1038/s42256-022-00550-z},
+  doi={10.1038/s42256-022-00550-z}
 }
 ```
 
