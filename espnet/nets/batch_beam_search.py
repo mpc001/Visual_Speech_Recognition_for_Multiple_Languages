@@ -35,13 +35,14 @@ class BatchBeamSearch(BeamSearch):
         """Convert list to batch."""
         if len(hyps) == 0:
             return BatchHypothesis()
+        yseq=pad_sequence(
+            [h.yseq for h in hyps], batch_first=True, padding_value=self.eos
+        )
         return BatchHypothesis(
-            yseq=pad_sequence(
-                [h.yseq for h in hyps], batch_first=True, padding_value=self.eos
-            ),
-            length=torch.tensor([len(h.yseq) for h in hyps], dtype=torch.int64),
-            score=torch.tensor([h.score for h in hyps]),
-            scores={k: torch.tensor([h.scores[k] for h in hyps]) for k in self.scorers},
+            yseq=yseq,
+            length=torch.tensor([len(h.yseq) for h in hyps], dtype=torch.int64, device=yseq.device),
+            score=torch.tensor([h.score for h in hyps]).to(yseq.device),
+            scores={k: torch.tensor([h.scores[k] for h in hyps], device=yseq.device) for k in self.scorers},
             states={k: [h.states[k] for h in hyps] for k in self.scorers},
         )
 

@@ -1,0 +1,22 @@
+# config.yaml
+
+defaults:  
+  - _self_  
+  - override hydra/hydra_logging: disabled  
+  - override hydra/job_logging: disabled  
+hydra:  
+  output_subdir: null  
+  run:  
+    dir: .
+config_filename: null
+data_dir: null
+data_filename: null
+data_ext: ".mp4"
+landmarks_dir: null
+landmarks_filename: null
+landmarks_ext: ".pkl"
+labels_filename: null
+detector: retinaface
+dst_filename: null
+gpu_idx: 0
+output_subdir: null

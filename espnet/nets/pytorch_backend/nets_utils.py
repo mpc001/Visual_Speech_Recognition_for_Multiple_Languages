@@ -500,3 +500,27 @@ def get_activation(act):
     }
 
     return activation_funcs[act]()
+
+
+class MLPHead(torch.nn.Module):
+    def __init__(self, idim, hdim, odim, norm="batchnorm"):
+        super(MLPHead, self).__init__()
+        self.norm = norm
+
+        self.fc1 = torch.nn.Linear(idim, hdim)
+        if norm == "batchnorm":
+            self.bn1 = torch.nn.BatchNorm1d(hdim)
+        elif norm == "layernorm":
+            self.norm1 = torch.nn.LayerNorm(hdim)
+        self.nonlin1 = torch.nn.ReLU(inplace=True)
+        self.fc2 = torch.nn.Linear( hdim, odim)
+
+    def forward(self, x):
+        x = self.fc1(x)
+        if self.norm == "batchnorm":
+            x = self.bn1(x.transpose(1,2)).transpose(1,2)
+        elif self.norm == "layernorm":
+            x = self.norm1(x)
+        x = self.nonlin1(x)
+        x = self.fc2(x)
+        return x

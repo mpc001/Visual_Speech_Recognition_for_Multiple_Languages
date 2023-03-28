@@ -3,42 +3,25 @@
 
 <div align="center">
 
-[📘Introduction](#introduction) |
-[📝License](#License) |
-[🛠️Installation](#Installation) |
-[👄Recognition](#Recognition) |
-[🐯Model Zoo](#Model-Zoo) |
-[📧Contact](#Contact)
+[📘Introduction](#Introduction) |
+[🛠️Preparation](#Preparation) |
+[📊Benchmark](#Benchmark-evaluation) |
+[🔮Inference](#Speech-prediction) |
+[🐯Model zoo](#Model-Zoo) |
+[📝License](#License)
 </div>
 
 ## Authors
 
-[Pingchuan Ma](https://mpc001.github.io/), [Stavros Petridis](https://ibug.doc.ic.ac.uk/people/spetridis), [Maja Pantic](https://ibug.doc.ic.ac.uk/people/mpantic).
+[Pingchuan Ma](https://mpc001.github.io/), [Alexandros Haliassos](https://dblp.org/pid/257/3052.html), [Adriana Fernandez-Lopez](https://scholar.google.com/citations?user=DiVeQHkAAAAJ), [Honglie Chen](https://scholar.google.com/citations?user=HPwdvwEAAAAJ), [Stavros Petridis](https://ibug.doc.ic.ac.uk/people/spetridis), [Maja Pantic](https://ibug.doc.ic.ac.uk/people/mpantic).
+
+## Update
+
+`2023-03-27`: We have released our AutoAVSR models for LRS3, see [here](#autoavsr-models).
 
 ## Introduction
 
-This is the repository of [Visual Speech Recognition for Multiple Languages](https://arxiv.org/abs/2202.13084), which is the successor of [End-to-End Audio-Visual Speech Recognition with Conformers](https://arxiv.org/abs/2102.06657). The repository is mainly based on [ESPnet](https://github.com/espnet/espnet). We provide state-of-the-art algorithms for end-to-end visual speech recognition in the wild.
-
-<details closed>
-<summary>Major features</summary>
-
-- **Modular Design**
-
-    The repository is composed of face tracking, pre-processing, and acoustic/visual encoder backbones.
-
-- **Support of Benchmarks for Speech Recognition**
-
-    Our models provide state-of-the-art performance for speech recognition datasets.
-
-- **Support of Extraction of Representations or Mouth Region Of Interest**
-
-    Our models directly support extraction of speech representations or mouth region of interests (ROIs).
-
-- **Support of Recognition of Your Own Videos**
-
-    We provide support for performing visual speech recognition for your own videos.
-
-</details>
+This is the repository of [Auto-AVSR: Audio-Visual Speech Recognition with Automatic Labels](https://arxiv.org/abs/2303.14307) and [Visual Speech Recognition for Multiple Languages](https://arxiv.org/abs/2202.13084), which is the successor of [End-to-End Audio-Visual Speech Recognition with Conformers](https://arxiv.org/abs/2102.06657). By using this repository, you can achieve the performance of 19.1%, 1.0% and 0.9% WER for automatic, visual, and audio-visual speech recognition (ASR, VSR, and AV-ASR) on LRS3.
 
 ## Demo
 
@@ -53,129 +36,74 @@ English -> Mandarin -> Spanish   |    French -> Portuguese -> Italian  |
 </div>
 
 
-## Installation
-### How to Install Environments
-1. Clone the repository into a directory. We refer to that directory as *`${lipreading_root}`*.
+## Preparation
+1. Clone the repository and enter it locally:
 
 ```Shell
 git clone https://github.com/mpc001/Visual_Speech_Recognition_for_Multiple_Languages
+cd Visual_Speech_Recognition_for_Multiple_Languages
 ```
 
-2. Install [PyTorch](https://pytorch.org) (**>=1.8.0**)
+2. Setup the environment.
+```Shell
+conda create -y -n autoavsr python=3.8
+conda activate autoavsr
+```
 
-3. Install other packages.
+3. Install pytorch, torchvision, and torchaudio by following instructions [here](https://pytorch.org/get-started/), and install all packages:
 
 ```Shell
 pip install -r requirements.txt
+conda install -c conda-forge ffmpeg
 ```
 
-### How to Prepare Models and Landmarks
+4. Download and extract a pre-trained model and/or language model from [model zoo](#Model-Zoo) to:
 
-- **Model.** Download a model from [Model Zoo](./models/README.md).
-    - For models trained on the CMU-MOSEAS dataset, which contains multiple languages, please unzip them into *`${lipreading_root}/models/${dataset}/${language_code}`* (e.g. *`${lipreading_root}/models/CMUMOSEAS/pt`*).
-    - For models trained on a dataset with one language, please unzip them into *`${lipreading_root}/models/${dataset}`*.
+- `./benchmarks/${dataset}/models`
 
-- **Language Model.** The performance can be improved in most cases by incorporating an external language model. Please download a language model from [Model Zoo](./models/README.md).
-    - For a language model trained for the CMU-MOSEAS dataset, please unzip them into *`${lipreading_root}/language_models/${dataset}/${language_code}`*.
-    - For a language model trained for datasets with one language, please unzip them into *`${lipreading_root}/language_models/${dataset}`*.
+- `./benchmarks/${dataset}/language_models`
 
-- **Tracker [option].** If you intend to test your own videos, additional packages for face detection and face alignment need to be pre-installed, which are provided in the [tools](./tools) folder.
+5. [For VSR and AV-ASR] Install [RetinaFace](./tools) or [MediaPipe](https://pypi.org/project/mediapipe/) tracker.
 
-- **Landmarks [option].** If you want to evaluate on benchmarks, there is no need to install the tracker. Please download pre-computed landmarks from [Model Zoo](#Model-Zoo) and unzip them into *`${lipreading_root}/landmarks/${dataset}`*.
-
-## Recognition
-
-### Generic Options
-
-- We refer to a path name (.ini) that includes configuration information as *`<CONFIG-FILENAME-PATH>`*. We put configuration files in *`${lipreading_root}/configs`* by default.
-
-- We refer to a path name (.ref) that includes labels information as *`<LABELS-FILENAME-PATH>`*.
-    - For the CMU-MOSEAS dataset and Multilingual TEDx dataset, which include multiple languages, we put labels files (.ref) in *`${lipreading_root}/labels/${dataset}/${language_code}`*.
-    - For datasets with one language, we put label files in *`${lipreading_root}/labels/${dataset}`*.
-
-- We refer to the original dataset directory as *`<DATA-DIRECTORY-PATH>`*, and to the path name of a single original video as *`<DATA-FILENAME-PATH>`*.
-
-- We refer to the landmarks diectory as *`<LANDMARKS-DIRECTORY-PATH>`*. We assume the default directory is *`${lipreading_root}/landmarks/${dataset}/${dataset}_landmarks`*.
-
-- We use CPU for inference by default. If you want to speed up the decoding process, please consider
-    -   adding a command-line argument about the **GPU** option (e.g. *`--gpu-idx <GPU_ID>`*). *`<GPU_ID>`* is the ID of your selected GPU, which is a 0-based integer.
-    -   setting *`beam_size`* in the configuration filename (.ini) *`<CONFIG-FILENAME-PATH>`* to a small value (e.g. 5) in case your maximum GPU Memory is exceeded.
-
-### How to Test
-
-- We assume original videos from [desired dataset](#Model-Zoo) have been downloaded to the dataset directory *`<DATA-DIRECTORY-PATH>`* and landmarks have been unzipped to the landmark directory *`${lipreading_root}/landmarks/${dataset}`*.
-
-- The frame rate (fps) of your video should match the input *`v_fps`* in the configuration file.
-
-* **To evaluate the performance on desired dataset.**
+### Benchmark evaluation
 
 ```Shell
-python main.py --config-filename <CONFIG-FILENAME-PATH> \
-               --labels-filename <LABELS-FILENAME-PATH> \
-               --data-dir <DATA-DIRECTORY-PATH> \
-               --landmarks-dir <LANDMARKS-DIRECTORY-PATH>
+python eval.py config_filename=[config_filename] \
+               labels_filename=[labels_filename] \
+               data_dir=[data_dir] \
+               landmarks_dir=[landmarks_dir]
 ```
 
-* **To lip read from a single video file.**
+- `[config_filename]` is the model configuration path, located in `./configs`.
+
+- `[labels_filename]` is the labels path, located in `${lipreading_root}/benchmarks/${dataset}/labels`.
+
+- `[data_dir]` and `[landmarks_dir]` are the directories for original dataset and corresponding landmarks.
+
+- `gpu_idx=-1` can be added to switch from `cuda:0` to `cpu`.
+
+### Speech prediction
 
 ```Shell
-python main.py --config-filename <CONFIG-FILENAME-PATH> \
-               --data-filename <DATA-FILENAME-PATH>
+python infer.py config_filename=[config_filename] data_filename=[data_filename]
 ```
 
-### How to Extract Mouth ROIs
+- `data_filename` is the path to the audio/video file.
 
-- Mouth ROIs can be extracted by setting *`<FEATS-POSITION>`* to *`mouth`*. The mouth ROIs will be saved to *`<OUTPUT-FILENAME-PATH>`* with the .avi file extension.
+- `detector=mediapipe` can be added to switch from RetinaFace to MediaPipe tracker.
 
-- The *`${lipreading_root}/outputs`* folder can be used to save the mouth ROIs.
-
-* **To extract mouth ROIs from desired dataset.**
+### Mouth ROIs cropping
 
 ```Shell
-python main.py --labels-filename <LABELS-FILENAME-PATH> \
-               --data-dir <DATA-DIRECTORY-PATH> \
-               --landmarks-dir <LANDMARKS-DIRECTORY-PATH> \
-               --dst-dir <OUTPUT-DIRECTORY-PATH> \
-               --feats-position <FEATS-POSITION>
+python main.py data_filename=[data_filename] dst_filename=[dst_filename]
 ```
 
-* **To extract mouth ROIs from a single video file.**
+- `dst_filename` is the path where the cropped mouth will be saved.
 
-```Shell
-python main.py --data-filename <DATA-FILENAME-PATH> \
-               --dst-filename <OUTPUT-FILENAME-PATH> \
-               --feats-position <FEATS-POSITION>
-```
-
-### How to Extract Speech Representations
-
-- Speech representations can be extracted from the top of ResNet-18 (512-D) or Conformer (256-D) by setting *`<FEATS-POSITION>`* to *`resnet`* or *`conformer`*, respetively. The representations will be saved to *`<OUTPUT-DIRECTORY-PATH>`* or *`<OUTPUT-FILENAME-PATH>`* with the .npz file extension.
-
-- The *`${lipreading_root}/outputs`* folder can be used to save the speech representations.
-
-* **To extract speech representations from desired dataset.**
-
-```Shell
-python main.py --config-filename <CONFIG-FILENAME-PATH> \
-               --labels-filename <LABELS-FILENAME-PATH> \
-               --data-dir <DATA-DIRECTORY-PATH> \
-               --landmarks-dir <LANDMARKS-DIRECTORY-PATH> \
-               --dst-dir <OUTPUT-DIRECTORY-PATH> \
-               --feats-position <FEATS-POSITION>
-```
-
-* **To extract speech representations from a single video file.**
-
-```Shell
-python main.py --config-filename <CONFIG-FILENAME-PATH> \
-               --data-filename <DATA-FILENAME-PATH> \
-               --dst-filename <OUTPUT-FILENAME-PATH> \
-               --feats-position <FEATS-POSITION>
-```
-
-## Model Zoo
+## Model zoo
 
 ### Overview
+
 We support a number of datasets for speech recognition:
 - [x] [Lip Reading Sentences 2 (LRS2)](https://www.robots.ox.ac.uk/~vgg/data/lip_reading/lrs2.html)
 - [x] [Lip Reading Sentences 3 (LRS3)](https://www.robots.ox.ac.uk/~vgg/data/lip_reading/lrs3.html)
@@ -185,13 +113,177 @@ We support a number of datasets for speech recognition:
 - [x] [Lombard GRID](http://spandh.dcs.shef.ac.uk/avlombard)
 - [x] [TCD-TIMIT](https://sigmedia.tcd.ie)
 
-### Evaluation
+### AutoAVSR models
 
-We provide landmarks, language models, models for each dataset. Please see the [models](./models/README.md) page for details.
+<details open>
+
+<summary>Lip Reading Sentences 3 (LRS3)</summary>
+
+<p> </p>
+
+|     Components        |  WER |                                             url                                         |  size (MB)  |
+|:----------------------|:----:|:---------------------------------------------------------------------------------------:|:-----------:|
+|   **Visual-only**     |
+| -                     | 19.1 |[GoogleDrive](http://bit.ly/40EAtyX) or [BaiduDrive](https://bit.ly/3ZjbrV5)(key: dqsy)  |     891     |
+|   **Audio-only**      |
+| -                     | 1.0  |[GoogleDrive](http://bit.ly/3ZSdh0l) or [BaiduDrive](http://bit.ly/3Z1TlGU)(key: dvf2)   |     860     |
+|   **Audio-visual**    |
+| -                     | 0.9  |[GoogleDrive](http://bit.ly/3yRSXAn) or [BaiduDrive](http://bit.ly/3LAxcMY)(key: sai5)   |     1540    |
+| **Language models**   |
+| -                     |   -  |[GoogleDrive](http://bit.ly/3FE4XsV) or [BaiduDrive](http://bit.ly/3yRI5SY)(key: t9ep)   |     191     |
+| **Landmarks**         |
+| -                     |   -  |[GoogleDrive](https://bit.ly/33rEsax) or [BaiduDrive](https://bit.ly/3rwQSph)(key: mi3c) |     18577   |
+
+</details>
+
+### VSR for multiple languages models
+
+<details open>
+
+<summary>Lip Reading Sentences 2 (LRS2)</summary>
+
+<p> </p>
+
+|     Components        |  WER |                                             url                                         |  size (MB)  |
+|:----------------------|:----:|:---------------------------------------------------------------------------------------:|:-----------:|
+|   **Visual-only**     |
+| -                     | 26.1 |[GoogleDrive](https://bit.ly/3I25zrH) or [BaiduDrive](https://bit.ly/3BAHBkH)(key: 48l1) |     186     |
+| **Language models**   |
+| -                     |   -  |[GoogleDrive](https://bit.ly/3qzWKit) or [BaiduDrive](https://bit.ly/3KgAL7T)(key: 59u2) |     180     |
+| **Landmarks**         |
+| -                     |   -  |[GoogleDrive](https://bit.ly/3jSMMoz) or [BaiduDrive](https://bit.ly/3BuIwBB)(key: 53rc) |     9358    |
+
+</details>
+
+
+<details open>
+
+<summary>Lip Reading Sentences 3 (LRS3)</summary>
+
+<p> </p>
+
+|     Components        |  WER |                                             url                                         |  size (MB)  |
+|:----------------------|:----:|:---------------------------------------------------------------------------------------:|:-----------:|
+|   **Visual-only**     |
+| -                     | 32.3 |[GoogleDrive](https://bit.ly/3Bp4gjV) or [BaiduDrive](https://bit.ly/3rIzLCn)(key: 1b1s) |     186     |
+| **Language models**   |
+| -                     |   -  |[GoogleDrive](https://bit.ly/3qzWKit) or [BaiduDrive](https://bit.ly/3KgAL7T)(key: 59u2) |     180     |
+| **Landmarks**         |
+| -                     |   -  |[GoogleDrive](https://bit.ly/33rEsax) or [BaiduDrive](https://bit.ly/3rwQSph)(key: mi3c) |     18577   |
+
+</details>
+
+
+
+<details open>
+
+<summary>Chinese Mandarin Lip Reading (CMLR)</summary>
+
+<p> </p>
+
+|     Components        |  CER |                                             url                                         |  size (MB)  |
+|:----------------------|:----:|:---------------------------------------------------------------------------------------:|:-----------:|
+|   **Visual-only**     |
+| -                     |  8.0 |[GoogleDrive](https://bit.ly/3fR8RkU) or [BaiduDrive](https://bit.ly/3IyACLB)(key: 7eq1) |     195     |
+| **Language models**   |
+| -                     |   -  |[GoogleDrive](https://bit.ly/3fPxXAJ) or [BaiduDrive](https://bit.ly/3rEcErr)(key: k8iv) |     187     |
+| **Landmarks**         |
+| -                     |   -  |[GoogleDrive](https://bit.ly/3bvetPL) or [BaiduDrive](https://bit.ly/3o2u53d)(key: 1ret) |     3721    |
+
+</details>
+
+
+<details open>
+
+<summary>CMU Multimodal Opinion Sentiment, Emotions and Attributes (CMU-MOSEAS)</summary>
+
+<p> </p>
+
+|     Components        |  WER |                                             url                                         |  size (MB)  |
+|:----------------------|:----:|:---------------------------------------------------------------------------------------:|:-----------:|
+|   **Visual-only**     |
+| Spanish               | 44.5 |[GoogleDrive](https://bit.ly/34MjWBW) or [BaiduDrive](https://bit.ly/33rMq3a)(key: m35h) |     186     |
+| Portuguese            | 51.4 |[GoogleDrive](https://bit.ly/3HjXCgo) or [BaiduDrive](https://bit.ly/3IqbbMg)(key: wk2h) |     186     |
+| French                | 58.6 |[GoogleDrive](https://bit.ly/3Ik6owb) or [BaiduDrive](https://bit.ly/35msiQG)(key: t1hf) |     186     |
+| **Language models**   |
+| Spanish               |   -  |[GoogleDrive](https://bit.ly/3rppyJN) or [BaiduDrive](https://bit.ly/3nA3wCN)(key: 0mii) |     180     |
+| Portuguese            |   -  |[GoogleDrive](https://bit.ly/3gPvneF) or [BaiduDrive](https://bit.ly/33vL8Es)(key: l6ag) |     179     |
+| French                |   -  |[GoogleDrive](https://bit.ly/3LDChSn) or [BaiduDrive](https://bit.ly/3sNnNql)(key: 6tan) |     179     |
+| **Landmarks**         |
+| -                     |   -  |[GoogleDrive](https://bit.ly/34Cf6ak) or [BaiduDrive](https://bit.ly/3BiFG4c)(key: vsic) |     3040    |
+
+
+</details>
+
+
+<details open>
+
+<summary>GRID</summary>
+
+<p> </p>
+
+|     Components        |  WER |                                             url                                         |  size (MB)  |
+|:----------------------|:----:|:---------------------------------------------------------------------------------------:|:-----------:|
+|   **Visual-only**     |
+| Overlapped            |  1.2 |[GoogleDrive](https://bit.ly/3Aa6PWn) or [BaiduDrive](https://bit.ly/3IdamGh)(key: d8d2) |     186     |
+| Unseen                |  4.8 |[GoogleDrive](https://bit.ly/3patMVh) or [BaiduDrive](https://bit.ly/3t6459A)(key: ttsh) |     186     |
+| **Landmarks**         |
+| -                     |   -  |[GoogleDrive](https://bit.ly/2Yzu1PF) or [BaiduDrive](https://bit.ly/30fucjG)(key: 16l9) |     1141    |
+
+You can include `data_ext=.mpg` in your command line to match the video file extension in the GRID dataset.
+
+</details>
+
+
+<details open>
+
+<summary>Lombard GRID</summary>
+
+<p> </p>
+
+|     Components        |  WER |                                             url                                         |  size (MB)  |
+|:----------------------|:----:|:---------------------------------------------------------------------------------------:|:-----------:|
+|   **Visual-only**     |
+| Unseen (Front Plain)  |  4.9 |[GoogleDrive](https://bit.ly/3H5zkGQ) or [BaiduDrive](https://bit.ly/3LE1xI6)(key: 38ds) |     186     |
+| Unseen (Side Plain)   |  8.0 |[GoogleDrive](https://bit.ly/3BsGOSO) or [BaiduDrive](https://bit.ly/3sRZYNY)(key: k6m0) |     186     |
+| **Landmarks**         |
+| -                     |   -  |[GoogleDrive](https://bit.ly/354YOH0) or [BaiduDrive](https://bit.ly/3oWUCA4)(key: cusv) |     309     |
+
+You can include `data_ext=.mov` in your command line to match the video file extension in the Lombard GRID dataset.
+
+</details>
+
+
+<details open>
+
+<summary>TCD-TIMIT</summary>
+
+<p> </p>
+
+|     Components        |  WER |                                             url                                         |  size (MB)  |
+|:----------------------|:----:|:---------------------------------------------------------------------------------------:|:-----------:|
+|   **Visual-only**     |
+| Overlapped            | 16.9 |[GoogleDrive](https://bit.ly/3Fv7u61) or [BaiduDrive](https://bit.ly/33rPlZN)(key: jh65) |     186     |
+| Unseen                | 21.8 |[GoogleDrive](https://bit.ly/3530d0N) or [BaiduDrive](https://bit.ly/3nxZjzC)(key: n2gr) |     186     |
+| **Language models**   |
+| -                     |   -  |[GoogleDrive](https://bit.ly/3qzWKit) or [BaiduDrive](https://bit.ly/3KgAL7T)(key: 59u2) |     180     |
+| **Landmarks**         |
+| -                     |   -  |[GoogleDrive](https://bit.ly/3HYmifr) or [BaiduDrive](https://bit.ly/3JFJ6RH)(key: bnm8) |     930     |
+
+</details>
+
 
 ## Citation
 
 If you find this code useful in your research, please consider citing the following papers:
+```bibtex
+@inproceedings{ma2023auto,
+  author={Ma, Pingchuan and Haliassos, Alexandros and Fernandez-Lopez, Adriana and Chen, Honglie and Petridis, Stavros and Pantic, Maja},
+  booktitle={IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
+  title={Auto-AVSR: Audio-Visual Speech Recognition with Automatic Labels}, 
+  year={2023},
+}
+```
 
 ```bibtex
 @article{ma2022visual,
@@ -215,4 +307,3 @@ It is noted that the code can only be used for comparative or benchmarking purpo
 ```
 [Pingchuan Ma](pingchuan.ma16[at]imperial.ac.uk)
 ```
-
