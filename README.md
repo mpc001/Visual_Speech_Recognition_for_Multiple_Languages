@@ -275,7 +275,8 @@ You can include `data_ext=.mov` in your command line to match the video file ext
 
 ## Citation
 
-If you find this code useful in your research, please consider citing the following papers:
+If you use the AutoAVSR models, please consider citing the following paper:
+
 ```bibtex
 @inproceedings{ma2023auto,
   author={Ma, Pingchuan and Haliassos, Alexandros and Fernandez-Lopez, Adriana and Chen, Honglie and Petridis, Stavros and Pantic, Maja},
@@ -284,6 +285,8 @@ If you find this code useful in your research, please consider citing the follow
   year={2023},
 }
 ```
+
+If you use the VSR models for multiple languages please consider citing the following paper:
 
 ```bibtex
 @article{ma2022visual,
