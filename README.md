@@ -95,7 +95,7 @@ python infer.py config_filename=[config_filename] data_filename=[data_filename]
 ### Mouth ROIs cropping
 
 ```Shell
-python main.py data_filename=[data_filename] dst_filename=[dst_filename]
+python crop_mouth.py data_filename=[data_filename] dst_filename=[dst_filename]
 ```
 
 - `dst_filename` is the path where the cropped mouth will be saved.
