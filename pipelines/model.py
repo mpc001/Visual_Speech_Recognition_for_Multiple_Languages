@@ -20,30 +20,15 @@ from espnet.nets.pytorch_backend.e2e_asr_transformer import E2E
 
 
 class AVSR(torch.nn.Module):
-    def __init__(self, config, device="cpu"):
+    def __init__(self, modality, model_path, model_conf, rnnlm=None, rnnlm_conf=None,
+        penalty=0., ctc_weight=0.1, lm_weight=0., beam_size=40, device="cuda:0"):
         super(AVSR, self).__init__()
-
         self.device = device
 
-        self.load_model(config)
-        self.model.to(device=self.device).eval()
-
-        beam_search_decoder = BeamSearchDecoder(self.model, self.token_list, config)
-        self.beam_search = beam_search_decoder.get_batch_beam_search()
-        self.beam_search.to(device=self.device).eval()
-
-
-    def load_model(self, config):
-        if config.get("input", "modality") == "audiovisual":
+        if modality == "audiovisual":
             from espnet.nets.pytorch_backend.e2e_asr_transformer_av import E2E
         else:
             from espnet.nets.pytorch_backend.e2e_asr_transformer import E2E
-
-        model_path = config.get("model","model_path")
-        model_conf = config.get("model","model_conf")
-
-        assert os.path.isfile(model_path), f"model_path: {model_path} does not exist."
-        assert os.path.isfile(model_conf), f"model_conf: {model_conf} does not exist."
 
         with open(model_conf, "rb") as f:
             confs = json.load(f)
@@ -58,10 +43,12 @@ class AVSR(torch.nn.Module):
             self.token_list = ['<blank>'] + [word.split()[0] for word in open(file_path).read().splitlines()] + ['<eos>']
         self.odim = len(self.token_list)
 
-        # Initialize and load the pre-trained model
         self.model = E2E(self.odim, self.train_args)
         self.model.load_state_dict(torch.load(model_path, map_location=lambda storage, loc: storage))
+        self.model.to(device=self.device).eval()
 
+        self.beam_search = get_beam_search_decoder(self.model, self.token_list, rnnlm, rnnlm_conf, penalty, ctc_weight, lm_weight, beam_size)
+        self.beam_search.to(device=self.device).eval()
         
     def infer(self, data):
         with torch.no_grad():
@@ -76,52 +63,37 @@ class AVSR(torch.nn.Module):
         return transcription.replace("<eos>", "")
 
 
-class BeamSearchDecoder:
-    def __init__(self, model, token_list, config):
-        self.model = model
-        self.odim = model.odim
-        self.token_list = token_list
-        self.config = config
+def get_beam_search_decoder(model, token_list, rnnlm=None, rnnlm_conf=None, penalty=0, ctc_weight=0.1, lm_weight=0., beam_size=40):
+    sos = model.odim - 1
+    eos = model.odim - 1
+    scorers = model.scorers()
 
-    def get_batch_beam_search(self):
-        rnnlm = self.config.get("model", "rnnlm")
-        rnnlm_conf = self.config.get("model", "rnnlm_conf")
+    if not rnnlm:
+        lm = None
+    else:
+        lm_args = get_model_conf(rnnlm, rnnlm_conf)
+        lm_model_module = getattr(lm_args, "model_module", "default")
+        lm_class = dynamic_import_lm(lm_model_module, lm_args.backend)
+        lm = lm_class(len(token_list), lm_args)
+        torch_load(rnnlm, lm)
+        lm.eval()
 
-        penalty = self.config.getfloat("decode", "penalty")
-        ctc_weight = self.config.getfloat("decode", "ctc_weight")
-        lm_weight = self.config.getfloat("decode", "lm_weight")
-        beam_size = self.config.getint("decode", "beam_size")
+    scorers["lm"] = lm
+    scorers["length_bonus"] = LengthBonus(len(token_list))
+    weights = dict(
+        decoder=1.0 - ctc_weight,
+        ctc=ctc_weight,
+        lm=lm_weight,
+        length_bonus=penalty,
+    )
 
-        sos = self.odim - 1
-        eos = self.odim - 1
-        scorers = self.model.scorers()
-
-        if not rnnlm:
-            lm = None
-        else:
-            lm_args = get_model_conf(rnnlm, rnnlm_conf)
-            lm_model_module = getattr(lm_args, "model_module", "default")
-            lm_class = dynamic_import_lm(lm_model_module, lm_args.backend)
-            lm = lm_class(len(self.token_list), lm_args)
-            torch_load(rnnlm, lm)
-            lm.eval()
-
-        scorers["lm"] = lm
-        scorers["length_bonus"] = LengthBonus(len(self.token_list))
-        weights = dict(
-            decoder=1.0 - ctc_weight,
-            ctc=ctc_weight,
-            lm=lm_weight,
-            length_bonus=penalty,
-        )
-
-        return BatchBeamSearch(
-            beam_size=beam_size,
-            vocab_size=len(self.token_list),
-            weights=weights,
-            scorers=scorers,
-            sos=sos,
-            eos=eos,
-            token_list=self.token_list,
-            pre_beam_score_key=None if ctc_weight == 1.0 else "decoder",
-        )
+    return BatchBeamSearch(
+        beam_size=beam_size,
+        vocab_size=len(token_list),
+        weights=weights,
+        scorers=scorers,
+        sos=sos,
+        eos=eos,
+        token_list=token_list,
+        pre_beam_score_key=None if ctc_weight == 1.0 else "decoder",
+    )

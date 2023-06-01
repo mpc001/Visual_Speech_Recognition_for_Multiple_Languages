@@ -17,13 +17,32 @@ class InferencePipeline(torch.nn.Module):
     def __init__(self, config_filename, detector="retinaface", face_track=False, device="cuda:0"):
         super(InferencePipeline, self).__init__()
         assert os.path.isfile(config_filename), f"config_filename: {config_filename} does not exist."
+
         config = ConfigParser()
         config.read(config_filename)
-        self.input_v_fps = config.getfloat("input", "v_fps")
-        self.model_v_fps = config.getfloat("model", "v_fps")
-        self.modality = config.get("input", "modality")
-        self.dataloader = AVSRDataLoader(modality=self.modality, speed_rate=self.input_v_fps/self.model_v_fps, detector=detector)
-        self.model = AVSR(config, device).to(device=device)
+
+        # modality configuration
+        modality = config.get("input", "modality")
+
+        self.modality = modality
+        # data configuration
+        input_v_fps = config.getfloat("input", "v_fps")
+        model_v_fps = config.getfloat("model", "v_fps")
+
+        # model configuration
+        model_path = config.get("model","model_path")
+        model_conf = config.get("model","model_conf")
+
+        # language model configuration
+        rnnlm = config.get("model", "rnnlm")
+        rnnlm_conf = config.get("model", "rnnlm_conf")
+        penalty = config.getfloat("decode", "penalty")
+        ctc_weight = config.getfloat("decode", "ctc_weight")
+        lm_weight = config.getfloat("decode", "lm_weight")
+        beam_size = config.getint("decode", "beam_size")
+
+        self.dataloader = AVSRDataLoader(modality, speed_rate=input_v_fps/model_v_fps, detector=detector)
+        self.model = AVSR(modality, model_path, model_conf, rnnlm, rnnlm_conf, penalty, ctc_weight, lm_weight, beam_size, device)
         if face_track and self.modality in ["video", "audiovisual"]:
             if detector == "mediapipe":
                 from pipelines.detectors.mediapipe.detector import LandmarksDetector
