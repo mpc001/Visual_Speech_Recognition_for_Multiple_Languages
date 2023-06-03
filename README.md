@@ -23,6 +23,10 @@
 
 This is the repository of [Auto-AVSR: Audio-Visual Speech Recognition with Automatic Labels](https://arxiv.org/abs/2303.14307) and [Visual Speech Recognition for Multiple Languages](https://arxiv.org/abs/2202.13084), which is the successor of [End-to-End Audio-Visual Speech Recognition with Conformers](https://arxiv.org/abs/2102.06657). By using this repository, you can achieve the performance of 19.1%, 1.0% and 0.9% WER for automatic, visual, and audio-visual speech recognition (ASR, VSR, and AV-ASR) on LRS3.
 
+## Tutorial
+
+We provide a tutorial [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1jfb6e4xxhXHbmQf-nncdLno1u0b4j614) to show how to use our Auto-AVSR models to perform speech recognition (ASR, VSR, and AV-ASR), crop mouth ROIs or extract visual speech features.
+
 ## Demo
 
 English -> Mandarin -> Spanish   |    French -> Portuguese -> Italian  |
@@ -34,7 +38,6 @@ English -> Mandarin -> Spanish   |    French -> Portuguese -> Italian  |
 [Youtube](https://youtu.be/FIau-6JA9Po) |
 [Bilibili](https://www.bilibili.com/video/BV1Wu411D7oP)
 </div>
-
 
 ## Preparation
 1. Clone the repository and enter it locally:
