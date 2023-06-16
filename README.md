@@ -17,6 +17,8 @@
 
 ## Update
 
+`2023-06-16`: We have released our training recipe for AutoAVSR, see [here](https://github.com/mpc001/auto_avsr).
+
 `2023-03-27`: We have released our AutoAVSR models for LRS3, see [here](#autoavsr-models).
 
 ## Introduction
