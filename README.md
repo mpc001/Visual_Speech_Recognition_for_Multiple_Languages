@@ -25,7 +25,7 @@
 
 ## Introduction
 
-This is the repository of [Auto-AVSR: Audio-Visual Speech Recognition with Automatic Labels](https://arxiv.org/abs/2303.14307) and [Visual Speech Recognition for Multiple Languages](https://arxiv.org/abs/2202.13084), which is the successor of [End-to-End Audio-Visual Speech Recognition with Conformers](https://arxiv.org/abs/2102.06657). By using this repository, you can achieve the performance of 19.1%, 1.0% and 0.9% WER for automatic, visual, and audio-visual speech recognition (ASR, VSR, and AV-ASR) on LRS3.
+This is the repository of [Visual Speech Recognition for Multiple Languages](https://arxiv.org/abs/2202.13084), which is the successor of [End-to-End Audio-Visual Speech Recognition with Conformers](https://arxiv.org/abs/2102.06657). By using this repository, you can achieve the performance of 19.1%, 1.0% and 0.9% WER for automatic, visual, and audio-visual speech recognition (ASR, VSR, and AV-ASR) on LRS3.
 
 ## Tutorial
 
@@ -282,7 +282,7 @@ You can include `data_ext=.mov` in your command line to match the video file ext
 
 ## Citation
 
-If you use the AutoAVSR models, please consider citing the following paper:
+If you use the AutoAVSR models [training code](https://github.com/mpc001/auto_avsr), please consider citing the following paper:
 
 ```bibtex
 @inproceedings{ma2023auto,
